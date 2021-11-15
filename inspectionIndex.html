@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>快检公示</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/inspectionIndex.css"/>
+</head>
+<body>
+	<div class="content_wrapper">
+		<p class="top_wrapper">食品安全快检检测结果</p>
+		<div class="chart_wrapper">
+			<div class="left-score">
+				<ul>
+					<li>
+						<span class='Qualified'>合格</span>
+						<p class="qualifiedCount">0</p>
+					</li>
+					<li>
+						<span class="NoQualified">不合格</span>
+						<p class="unqualifiedCount">0</p>
+					</li>
+				</ul>
+			</div>
+			<div class="middle-score">
+				<div id="ScoreChart">
+				</div>
+				<div class="scoCon">
+					<p style="font-size: 14px;">风险等级</p>
+					<p class='grade'></p>
+					<span class="percent">0%</span>
+				</div>
+			</div>
+			<div class="right-score">
+				<span>合共快检</span>
+				<p class="AllCount">0</p>
+			</div>
+		</div>
+		<div class="bottom_wrapper">
+			<p class="checkDate"><span></span>抽检</p>
+			<div>
+				<p class="list_title">
+					<span class="title1 nowrap"><i>不合格</i></span>
+					<span class="title2 nowrap active"><i>合格</i></span>
+					<span class="title3 nowrap"><i>汇总</i></span>
+				</p>
+			</div>
+			<div class="noData">
+				<img src="img/noData.png" alt="" />
+				<p>暂无数据</p>
+			</div>
+			<div class="busList">
+				<!--不合格-->
+				<!--<ul class="noPass" style="display: none;">
+					<li>
+						<p class="title_Re">
+							<span>盈川菜市场</span>
+						</p>
+						<div class="da_Re">
+							<p>
+								<span>样品名称</span>
+								<span>检查项目</span>
+								<span>结果</span>
+								<span>商家</span>
+								<span>处理结果</span>
+							</p>
+							<p class="result">
+								<span>油麦菜</span>
+								<span>农药残留</span>
+								<span>不合格</span>
+								<span>清唐生鲜</span>
+								<span>摧毁</span>
+							</p>
+						</div>
+					</li>
+				</ul>-->
+				<!--合格-->
+				<!--<ul class="HasPass">
+					<li>
+						<p class="title_Re">
+							<span>盈川菜市场</span>
+						</p>
+						<div class="da_Re">
+							<p>
+								<span>样品名称</span>
+								<span>检查项目</span>
+								<span>结果</span>
+								<span>商家</span>
+								<span>处理结果</span>
+							</p>
+							<p class="result">
+								<span>油麦菜</span>
+								<span>农药残留</span>
+								<span>不合格</span>
+								<span>清唐生鲜</span>
+								<span>摧毁</span>
+							</p>
+						</div>
+					</li>
+				</ul>-->
+				<!--汇总-->
+				<!--<ul class="allRecord" style="display: none;">
+					<li>
+						<p class="title_Re">
+							<span>盈川菜市场</span>
+							<span class="fr">查看近三日记录<img src="img/goIcon.png" alt="" /></span>
+						</p>
+						<div class="da_Re">
+							<p>
+								<span>日期</span>
+								<span>当天</span>
+								<span>近7天</span>
+								<span>近30天</span>
+								<span>近90天</span>
+							</p>
+							<p>
+								<span>不合格</span>
+								<span>12</span>
+								<span>4</span>
+								<span>6</span>
+								<span>8</span>
+							</p>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script src="js/inspectionIndex.js" type="text/javascript" charset="utf-8"></script>
+</html>
